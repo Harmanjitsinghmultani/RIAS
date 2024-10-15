@@ -1,0 +1,62 @@
+/* General container styles */
+.csv-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #252323; /* Corrected color code */
+  padding: 20px;
+  margin-left: 30%;
+}
+
+.csv-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.csv-title {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.csv-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.csv-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.csv-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.csv-button:hover {
+  background-color: #0056b3;
+}
+
+.csv-message {
+  margin-top: 15px;
+  color: #0e99d4;
+  text-align: center;
+}

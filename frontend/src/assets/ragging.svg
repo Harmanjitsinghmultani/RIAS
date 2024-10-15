@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <style>
+      .shield {
+        fill: white;
+        stroke: white;
+        stroke-width: 2;
+      }
+      .pulse {
+        animation: pulseAnimation 2s infinite;
+      }
+      @keyframes pulseAnimation {
+        0% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+      }
+    </style>
+  </defs>
+  <path
+    class="shield pulse"
+    d="M12 2L2 7v9c0 2.2 1.5 4.1 3.5 4.8L12 22l6.5-1.7C20.5 20.1 22 18.2 22 16V7l-10-5zm0 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-1-6h2v4h-2v-4z"
+  />
+</svg>

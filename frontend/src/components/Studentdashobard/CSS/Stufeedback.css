@@ -1,0 +1,251 @@
+.student-dashboard-feedback-card {
+  position: relative;
+  width: 110%; /* 100% width to ensure responsiveness */
+  max-width: 1800px; /* Limit the max width for larger screens */
+  height: auto; /* Auto height for better responsiveness */
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 80px auto;
+  margin-left: -20px;
+  margin-right: auto;
+  margin-top: 3.5%;
+  overflow-y: auto;
+  resize: both; /* Allows resizing in both width and height */
+  overflow: auto; /* Adds scrollbars if content overflows */
+  min-width: 600px; /* Minimum width constraint */
+  min-height: 600px; /* Minimum height constraint */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 1400px) {
+  .student-dashboard-feedback-card {
+    max-width: 1200px;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .student-dashboard-feedback-card {
+    max-width: 700px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .student-dashboard-feedback-card {
+    max-width: 100%;
+    min-width: unset; /* Remove min-width constraint */
+    max-height: 300px; /* Set max height for small screens */
+    padding: 8px;
+  }
+}
+
+.student-dashboard-submit-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #1e3a98;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.student-dashboard-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.student-dashboard-timetable-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.student-dashboard-timetable-table th,
+.student-dashboard-timetable-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.student-dashboard-timetable-table th {
+  background-color: #f2f2f2;
+}
+
+.student-dashboard-error-message {
+  color: red;
+  margin-top: 20px;
+}
+
+.student-dashboard-success-message {
+  color: green;
+  margin-top: 20px;
+}
+
+.student-dashboard-profile-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px 0;
+}
+
+.student-dashboard-profile-info p {
+  margin: 0;
+  flex: 1;
+  text-align: left;
+}
+
+.student-dashboard-feedback-form-container {
+  margin-top: 20px;
+}
+
+.student-dashboard-feedback-form {
+  width: 100%;
+}
+
+.student-dashboard-feedback-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.student-dashboard-feedback-table th,
+.student-dashboard-feedback-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.student-dashboard-feedback-table th {
+  background-color: #f2f2f2;
+}
+
+.student-dashboard-feedback-table select {
+  width: 100%;
+}
+
+.horizontal-scale-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.horizontal-scale-th, .horizontal-scale-td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.horizontal-scale-th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  width: 20%;
+}
+
+.horizontal-scale-td {
+  width: 16%;
+}
+
+.student-dashboard-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1000;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.student-dashboard-error-popup {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.student-dashboard-success-popup {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* Backdrop Overlay */
+.student-dashboard-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+  backdrop-filter: blur(5px); /* Blur effect on background content */
+  z-index: 999; /* Positioned behind the popup */
+}
+
+/* Popup Styles */
+.student-dashboard-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 1000; /* Positioned above the backdrop */
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff; /* White background for the popup */
+  text-align: center;
+}
+
+/* Confirm Popup */
+.student-dashboard-confirm-popup {
+  background-color: #2abae6;
+  border: 1px solid #000;
+  color: #111111;
+  font-weight: bold;
+}
+
+/* Error Popup */
+.student-dashboard-error-popup {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Success Popup */
+.student-dashboard-success-popup {
+  background-color: #19e649;
+  color: #155724;
+}
+
+/* Button Styles */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.student-dashboard-popup-button {
+  padding: 8px 16px;
+  background-color: #0e97e7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.student-dashboard-logout-button {
+  background-color: #cf3636;
+}

@@ -1,0 +1,154 @@
+/* Card container */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  height: 550px; /* Set a fixed height for the card */
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  overflow-y: scroll; /* Allow vertical scrolling */
+  margin-top: 8%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.card::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: just to ensure transparency */
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.card {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Header styles */
+.header {
+  font-size: 22px;
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+/* Form container styles */
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Partition styles */
+.partition {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Field styles */
+.field {
+  margin-bottom: 15px;
+}
+
+/* Label styles */
+.label {
+  font-size: 14px;
+  color: #333333;
+  margin-bottom: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+/* Input and select field styles */
+.input,
+.select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styles */
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
+
+
+/* Button styles */
+.submitt {
+  padding: 10px 20px; /* Adjusted padding to make the button compact */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* Prevent the button text from wrapping */
+  margin-right: 50%;
+  margin-bottom: 2%;
+
+}
+
+.submitt:hover {
+  background-color: #0056b3;
+}
+/* Adjust the content width to fit within the navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* Ensure content is responsive on smaller screens */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 95%;
+    padding: 15px;
+    height: 400px; /* Adjust height for smaller screens */
+  }
+  .partition {
+    width: 100%;
+  }
+  .header {
+    font-size: 18px;
+  }
+  .submit {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,184 @@
+.userdashboard-container {
+    padding: 20px;
+    background-color: #252323;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px auto;
+    max-height: 90vh;
+    overflow-y: auto; /* Ensure vertical scrolling for the container */
+    margin-top: 100px;
+}
+
+/* Wrapper for both tables */
+.userdashboard-table-wrapper {
+    display: flex; /* Use flexbox to arrange children horizontally */
+    justify-content: space-between; /* Space between containers */
+    gap: 20px; /* Space between the two containers */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling for the wrapper */
+    width: 100%;
+    max-height: 84vh;
+}
+
+/* General table container styles */
+.userdashboard-table-container {
+    flex: 1 1 45%; /* Allow each container to take up to 45% of the width */
+    min-width: 0; /* Prevent overflow issues */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    margin-bottom: 20px;
+    height: auto; /* Adjust height as needed */
+}
+
+/* Specific styles for Not Approved Users table container */
+.userdashboard-not-approved-table-container {
+    max-width: 900px; /* Set maximum width for the Not Approved Users table container */
+}
+
+/* Specific styles for Approved Users table container */
+.userdashboard-approved-table-container {
+    max-width: 650px; /* Set maximum width for the Approved Users table container */
+}
+
+/* General table styles */
+.userdashboard-table {
+    border-collapse: collapse;
+    width: 100%; /* Ensure table takes up full container width */
+}
+
+.userdashboard-table th,
+.userdashboard-table td {
+    padding: 4px; /* Further reduced padding for smaller tables */
+    border: 1px solid #000000;
+    background-color: #e6e6e6;
+    color: #000000;
+    text-align: left;
+    font-size: 0.6rem; /* Adjusted font size for better fit */
+}
+
+/* Specific styles for Not Approved Users table */
+.userdashboard-not-approved-table th:nth-child(5),
+.userdashboard-not-approved-table td:nth-child(5),
+.userdashboard-not-approved-table th:nth-child(6),
+.userdashboard-not-approved-table td:nth-child(6) {
+    width: 80px; /* Fixed width for Action and View columns */
+    text-align: center; /* Center align content in Action and View columns */
+}
+
+/* Specific styles for Approved Users table */
+.userdashboard-approved-table th:nth-child(5),
+.userdashboard-approved-table td:nth-child(5),
+.userdashboard-approved-table th:nth-child(6),
+.userdashboard-approved-table td:nth-child(6) {
+    width: 100px; /* Fixed width for Action and View columns */
+    text-align: center; /* Center align content in Action and View columns */
+}
+
+.userdashboard-table th {
+    background-color: rgb(243, 224, 13);
+}
+
+.userdashboard-table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.userdashboard-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+.userdashboard-approve-button,
+.userdashboard-select-button {
+    padding: 4px 8px; /* Further reduced button padding */
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.7rem; /* Smaller font size for buttons */
+}
+
+.userdashboard-approve-button:hover,
+.userdashboard-select-button:hover {
+    background-color: #218838;
+}
+
+.userdashboard-reject-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 4px 8px; /* Further reduced button padding */
+    cursor: pointer;
+    font-size: 0.7rem; /* Smaller font size for buttons */
+}
+
+.userdashboard-reject-button:hover {
+    background-color: #d32f2f;
+}
+
+.userdashboard-error-message {
+    color: #ff0000;
+    font-size: 0.8rem; /* Smaller font size for error messages */
+}
+
+.userdashboard-search-bar {
+    padding: 10px;
+    width: 100%; /* Ensure search bar takes full width of its container */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.userdashboard-view-button {
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 0.7rem;
+}
+
+.userdashboard-view-button:hover {
+    background-color: #0056b3;
+}
+
+.userdashboard-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+.userdashboard-popup.active {
+    display: block; /* Show popup when active */
+}
+
+.userdashboard-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userdashboard-popup-header h4 {
+    margin: 0;
+}
+
+.userdashboard-popup-close {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.userdashboard-popup-close:hover {
+    color: #000;
+}

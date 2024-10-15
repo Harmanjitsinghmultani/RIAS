@@ -1,0 +1,206 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-sidebar: #010f17;
+  --light-green: #FFFDD0;
+  --bg-color: #FFFDD0;
+  --light-grey: #252323;
+  --text-color: #FFFDD0;
+}
+
+/* Sidebar Container */
+.sidebar {
+  background-color: var(--bg-sidebar);
+  position: fixed;
+  top: 61px;
+  height: 100%;
+  width: 80px; /* Adjusted width when closed */
+  transition: width 0.4s ease; 
+  white-space: nowrap;
+  z-index: 1;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0 10px 10px 0;
+  overflow: hidden; /* Ensure content does not overflow */
+}
+
+
+.sidebar.closed {
+  width: 80px; /* Width when closed */
+  transition: width 0.4s ease; /* Smooth transition for width change */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 24px 29px;
+  height: 80px; /* Adjust as needed */
+  width: 100%;
+}
+
+/* Title Next to Menu Icon */
+header .menu-toggle {
+  cursor: pointer;
+  transition: transform 0.8s; /* Smooth transition for rotation */
+}
+
+header .menu-toggle.rotate {
+  transform: rotate(-180deg);
+}
+
+header .sidebar-title {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 70px; /* Space between menu icon and title */
+  display: inline-block;
+}
+
+/* Menu Links */
+.menu-links {
+  width: 100%;
+  list-style: none;
+  padding-top: 10px;
+}
+
+.menu-links a img {
+  padding-left: 27px;
+}
+
+.menu-links > li {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-green);
+  gap: 15px;
+  margin: 0 14px 20px;
+  padding-left: 10px;
+  height: 50px;
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Card-like shadow */
+}
+
+.menu-links > li:hover {
+  background-color: var(--bg-sidebar); /* Change background on hover */
+  color: #FFFDD0; /* Change text color on hover */
+}
+
+.menu-links > li input {
+  background-color: var(--light-green);
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.links-list a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  padding: 30px 0;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: background-color 0.4s ease;
+}
+
+.links-list a:hover {
+  background-color: var(--light-green);
+}
+
+/* Bottom Content */
+.bottom-content {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-green);
+  position: absolute;
+  gap: 9px;
+  padding: 8px 14px;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  border-radius: 0 0 10px 0; /* Rounded bottom right corner */
+}
+
+.bottom-content .logout {
+  position: absolute;
+  right: 27px;
+  cursor: pointer;
+}
+
+/* Hide Element */
+.hideElement {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+/* Sidebar Hover Area */
+.sidebar-hover-area {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px; /* Adjust if necessary */
+  background: transparent;
+  z-index: 0; /* Ensure it's behind the sidebar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Bottom Content */
+.bottom-content {
+  display: flex;
+  align-items: left;
+  text-align: left;
+  justify-content: space-between;
+  background-color: var(--light-green);
+  position: absolute;
+  gap: 9px;
+  padding: 8px 14px;
+  width: 100%;
+  height: 60px;
+  bottom: 0;
+  border-radius: 0 0 10px 0;
+}
+
+.bottom-content .developed-by {
+  font-size: 13px;
+  color: #ffffff;
+  margin-left: 14px;
+  text-align: left;
+  align-items: left;
+}
+
+.bottom-content .logout {
+  cursor: pointer;
+  margin-right: -14px;
+}

@@ -1,0 +1,34 @@
+<!-- Advanced SVG CSV Logo with Icon -->
+<svg 
+  id="csvLogo" 
+  xmlns="http://www.w3.org/2000/svg" 
+  viewBox="0 0 24 24" 
+  width="60" 
+  height="60" 
+  style="cursor: pointer;"
+>
+  <!-- Gradient Background -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8BC34A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Circle -->
+  <circle cx="12" cy="12" r="11" stroke="black" stroke-width="2" fill="url(#grad1)" />
+
+  <!-- Inner Circle -->
+  <circle cx="12" cy="12" r="8" stroke="black" stroke-width="1" fill="white" />
+
+  <!-- File Icon -->
+  <path d="M8 8h4l4 4v4h-8z" fill="#4CAF50" stroke="#000000" stroke-width="0.5" />
+
+  <!-- Lines representing data -->
+  <line x1="10" y1="10" x2="14" y2="10" stroke="#000000" stroke-width="0.5" />
+  <line x1="10" y1="12" x2="14" y2="12" stroke="#000000" stroke-width="0.5" />
+  <line x1="10" y1="14" x2="14" y2="14" stroke="#000000" stroke-width="0.5" />
+
+  <!-- CSV Text -->
+  <text x="12" y="20" font-family="Arial, sans-serif" font-size="6" text-anchor="middle" fill="#000000">CSV</text>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "name": "RIAS",
+  "version": "1.0.0",
+  "scripts": {
+    "frontend": "npm start --prefix frontend",
+    "backend": "npm run dev --prefix backend",
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  },
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  }
+}

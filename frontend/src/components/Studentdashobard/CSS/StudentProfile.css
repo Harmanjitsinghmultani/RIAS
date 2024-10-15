@@ -1,0 +1,177 @@
+/* Define color variables */
+:root {
+    --bg-sidebar: #010f17;
+    --light-green: #252323;
+    --bg-color: #f4f4f4;
+    --light-grey: #37887d;
+    --text-color: #FFF;
+}
+
+/* Container for the profile */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #252323;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 800px; /* Adjusted for dynamic content */
+    box-sizing: border-box;
+    margin-top: 50px;
+    color: #ddd;
+    margin-left: -1%;
+    padding-right: -10%;
+}
+
+/* Container for the profile boxes */
+.profile-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Square sections for profile and details */
+.profile-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #333333;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    box-sizing: border-box;
+    width: 600px; /* Fixed width */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto; /* Dynamic height */
+    overflow-y: auto; /* Allows scrolling if content overflows */
+    color: #ddd;
+}
+
+/* Profile picture styling */
+.profile-square img {
+    width: 2in; /* Set width to 2 inches */
+    height: 2in; /* Set height to 2 inches */
+    object-fit: cover; /* Ensure the image covers the box without distortion */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 15px;
+}
+
+/* Strong tags for labels */
+.profile-square strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* Spacing for individual detail sections */
+.profile-square div {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Input fields for editing */
+.profile-square input[type="text"],
+.profile-square input[type="email"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Buttons for saving and editing */
+.profile-square button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.profile-square button:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Container for each profile detail */
+.profile-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between lines */
+    width: 100%;
+}
+
+/* Style for the strong tag to maintain consistency */
+.profile-detail strong {
+    margin-right: 10px; /* Space between label and data */
+    flex-shrink: 0; /* Prevents label from shrinking */
+}
+
+/* Style for the profile data */
+.profile-data {
+    color: #ddd; /* Optional: matches the rest of your styling */
+}
+
+
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button.edit {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.edit:hover {
+    background-color: #45a049;
+  }
+  
+  button.save {
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  button.save:hover {
+    background-color: #0b7dda;
+  }
+  
+  button.cancel {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.cancel:hover {
+    background-color: #c62828;
+  }

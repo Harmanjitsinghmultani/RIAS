@@ -1,0 +1,62 @@
+/* General styling for the FacultySurvey component */
+.faculty-survey-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow:scroll;
+  }
+  
+  .faculty-survey-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .faculty-survey-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .faculty-survey-container label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .faculty-survey-container select,
+  .faculty-survey-container textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .faculty-survey-container textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .faculty-survey-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .faculty-survey-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .faculty-survey-container p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  

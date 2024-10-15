@@ -1,0 +1,148 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-sidebar: #010f17;
+  --light-green: #252323;
+  --bg-color: #252323;
+  --light-grey: #178778;
+  --text-color: #FFF;
+}
+
+/* Sidebar Container */
+.sidebar {
+  background-color: var(--bg-sidebar);
+  position: fixed;
+  top: 0;
+  width: 15vw;
+  transition: width 0.3s ease;
+  white-space: nowrap;
+  z-index: 1000;
+  left: 0;
+}
+
+.sidebar.close {
+  width: 5vw; /* Width when closed */
+}
+
+/* Upper Navbar */
+.upper-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6vh;
+  background-color: #050412;
+  padding: 0 2vw;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-bottom-right-radius: 2vw;
+  box-shadow: 0 0.2vh 1vh rgba(0, 0, 0, 0.1);
+  z-index: 500;
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+  transition: margin-left 0.3s ease;
+  margin-top: 6vh;
+  background-color: #252323;
+}
+
+.main-layout.expanded {
+  margin-left: 5vw; /* Margin when sidebar is closed */
+}
+
+.main-layout.collapsed {
+  margin-left: 15vw; /* Margin when sidebar is open */
+}
+
+/* Content Area */
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: calc(100vh - 6vh);
+  margin-left: 0vw;
+}
+
+.student-main-content-part1 {
+  flex: 4;
+  padding: 2vw;
+  overflow-y: auto;
+  background-color: #202027;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-bottom: 5vh;
+  margin-top: 2vh;
+}
+
+.student-main-content-part2 {
+  flex: 1;
+  padding: 2vw;
+  overflow-y: auto;
+  background-color: #252323;
+  box-sizing: border-box;
+  margin-right: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 20vw; /* Increase sidebar width for smaller screens */
+  }
+
+  .sidebar.close {
+    width: 10vw; /* Adjust sidebar width when closed */
+  }
+
+  .main-layout.expanded {
+    margin-left: 10vw; /* Adjust margin when sidebar is closed */
+  }
+
+  .main-layout.collapsed {
+    margin-left: 20vw; /* Adjust margin when sidebar is open */
+  }
+
+  .student-main-content-part1, .student-main-content-part2 {
+    padding: 1vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .upper-navbar {
+    height: 8vh; /* Increase navbar height on mobile */
+  }
+
+  .sidebar {
+    width: 100vw; /* Sidebar takes full width on mobile */
+    height: auto;
+    position: relative;
+  }
+
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .student-main-content-part1, .student-main-content-part2 {
+    flex: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .student-main-content-part2 {
+    margin-top: 2vh;
+  }
+}

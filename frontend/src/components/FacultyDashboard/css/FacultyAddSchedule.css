@@ -1,0 +1,40 @@
+.faculty-add-schedule {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faculty-add-schedule h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .faculty-add-schedule form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faculty-add-schedule input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .faculty-add-schedule button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .faculty-add-schedule button:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,105 @@
+/* BranchAnalysis.module.css */
+
+.BranchAnalysis_container {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-top: 6%;
+  margin-left: 7%;
+  margin-right: 5%;
+  height: 100%;
+  width: 100%; /* Ensures the container takes full width */
+  min-width: 800px; /* Minimum width to prevent it from shrinking too much */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  
+  
+}
+
+.BranchAnalysis_card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 100%;
+  
+  
+}
+
+.BranchAnalysis_inputcontainer {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.BranchAnalysis_branchDropdown {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 20%;
+  
+}
+
+.BranchAnalysis_searchButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.BranchAnalysis_searchButton:hover {
+  background-color: #0056b3;
+}
+
+.BranchAnalysis_analysisTableWrapper {
+  overflow-x: auto;
+}
+
+.BranchAnalysis_analysisTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.BranchAnalysis_analysisTable th, .BranchAnalysis_analysisTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.BranchAnalysis_message {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.BranchAnalysis_message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.BranchAnalysis_message.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+
+
+
+.BranchAnalysis_pdfButton {
+  background-color: #1399d7; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding for the button */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline-block */
+  font-size: 16px; /* Font size */
+  margin: 10px 0; /* Add margin */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.BranchAnalysis_pdfButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

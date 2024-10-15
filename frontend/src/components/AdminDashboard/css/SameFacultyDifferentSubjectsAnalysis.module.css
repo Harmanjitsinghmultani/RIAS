@@ -1,0 +1,178 @@
+.SameFacultyDifferentSubjectsAnalysi_container {
+  margin-top: 5.5%;
+  margin-left: 7%;
+  overflow-y: scroll; /* Ensure the content is scrollable */
+  max-height: 90vh; /* Adjust the max height to limit the container size */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+  width: 100%; /* Ensures the container takes full width */
+  min-width: 1200px; /* Minimum width to prevent it from shrinking too much */
+  max-width: 1300px; /* Optional: Set a maximum width if desired */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  
+}
+
+.SameFacultyDifferentSubjectsAnalysi_container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+  
+  .SameFacultyDifferentSubjectsAnalysi_card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 100%; /* Ensures the container takes full width */
+    min-width: 1200px; /* Minimum width to prevent it from shrinking too much */
+    max-width: 1400px; /* Optional: Set a maximum width if desired */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+  }
+
+
+  .SameFacultyDifferentSubjectsAnalysi_finalAverage {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
+  .SameFacultyDifferentSubjectsAnalysi_card h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+  }
+  .SameFacultyDifferentSubjectsAnalysi_card h3 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_card p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_message {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_message.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_inputcontainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 30px;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_subjectDropdown {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_subjectDropdown:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_searchButton {
+    padding: 12px 25px;
+    margin-left: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_searchButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_analysisTableWrapper {
+    margin-top: 25px;
+    overflow-x: auto;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_analysisTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_analysisTable th, 
+  .SameFacultyDifferentSubjectsAnalysi_analysisTable td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_analysisTable th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_analysisTable tbody tr:nth-child(even) {
+    background-color: #fbfbfb;
+  }
+  
+  .SameFacultyDifferentSubjectsAnalysi_analysisTable tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+
+
+
+
+
+
+
+  /* SameFacultyDifferentSubjectsAnalysis.module.css */
+
+/* SameFacultyDifferentSubjectsAnalysis.module.css */
+
+.SameFacultyDifferentSubjectsAnalysi_averages {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.SameFacultyDifferentSubjectsAnalysi_averageItem {
+  flex: 1;
+  text-align: center;
+  margin: 0 10px;
+  font-weight: bold; /* Makes text bold */
+}

@@ -1,0 +1,84 @@
+.upper-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #050412;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 250px; /* Default left position when sidebar is open */
+  width: calc(100% - 250px); /* Adjust based on the width of the sidebar */
+  border-radius: 20px; 
+  border-end-end-radius: 20px; /* Rounded corners */
+  margin-left: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  z-index: 2; /* Ensure the navbar is behind the sidebar */
+}
+
+.upper-navbar.closed {
+  left: 80px; /* Left position when sidebar is closed */
+  width: calc(100% - 80px); /* Adjust based on the width of the sidebar */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  margin-left: 100px;
+  color: #FFF;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.search-bar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  width: 24px; /* Set a fixed width for the icons */
+  height: 24px; /* Set a fixed height for the icons */
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+.nav-icon-svg {
+  width: 24px; /* Set a fixed width for the icons */
+  height: 30px; /* Set a fixed height for the icons */
+  margin-left: 20px;
+  cursor: pointer;
+}
+

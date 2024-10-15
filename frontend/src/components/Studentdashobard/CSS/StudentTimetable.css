@@ -1,0 +1,86 @@
+/* Define color variables */
+:root {
+  --bg-sidebar: #010f17;
+  --light-green: #252323;
+  --bg-color: #f4f4f4;
+  --light-grey: #37887d;
+  --text-color-white: #FFF;
+  --text-color-black: #000;
+  --black: #000;
+  --white: #FFF;
+}
+
+/* Container for the timetable */
+.student-timetable-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--light-green);
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px; /* Set a max width for the container */
+  box-sizing: border-box;
+  margin: 50px auto; /* Center the container horizontally and provide top margin */
+  color: var(--text-color-white);
+}
+
+/* Styling for the title */
+.student-timetable-container h2 {
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color-white);
+}
+
+/* Styling for the table */
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timetable-table th, .timetable-table td {
+  border: 1px solid var(--light-grey);
+  padding: 8px;
+  text-align: left;
+}
+
+.timetable-table th {
+  background-color: var(--black); /* Black background for table headers */
+  color: var(--text-color-black); /* White text color for headers */
+  font-weight: bold;
+}
+
+.timetable-table td {
+  background-color: var(--white); /* White background for table data cells */
+  color: var(--text-color-black); /* Black text color for data cells */
+}
+
+.timetable-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey background for zebra striping */
+}
+
+.timetable-table a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.timetable-table a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: Styling for error message */
+.alert-error {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Styling for the 'No timetable available' message */
+.no-timetable-message {
+  font-size: 18px;
+  color: var(--text-color-white);
+}

@@ -1,0 +1,30 @@
+.student-class-schedule {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.schedule-item {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-details p {
+  margin: 0.5rem 0;
+  font-size: 14px;
+}
+
+.no-schedules {
+  font-style: italic;
+  color: #888;
+}

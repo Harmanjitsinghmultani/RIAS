@@ -1,0 +1,70 @@
+.admin-dashboard-layout {
+  display: flex;
+  background-color: #505050;
+  min-height: 100vh;
+  margin-top: 4%; /* Reduced margin to fit more content */
+}
+
+.admin-dashboard-container {
+  flex-grow: 1;
+  padding: 60px;
+  background-color: #252323;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-dashboard-header {
+  margin-bottom: 30px;
+}
+
+.admin-dashboard-header h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+.admin-dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create a 3-column layout */
+  gap: 40px; /* Space between cards */
+}
+
+.admin-dashboard-card {
+  background-color: #505050;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.admin-dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.admin-dashboard-card h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #d5d5d5;
+}
+
+.admin-dashboard-card p {
+  font-size: 16px;
+  color: #505050;
+}
+
+.admin-dashboard-button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #252323;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.admin-dashboard-button:hover {
+  background-color: #e5a70a;
+}

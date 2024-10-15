@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <style>
+      .star {
+        fill: white;
+        stroke: white;
+        stroke-width: 1;
+      }
+      .rotate {
+        animation: rotateAnimation 5s linear infinite;
+        transform-origin: center;
+      }
+      @keyframes rotateAnimation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </defs>
+  <polygon
+    class="star rotate"
+    points="12,2 15,8 22,9 17,14 18,21 12,17 6,21 7,14 2,9 9,8"
+  />
+</svg>

@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-sidebar: #010f17;
+  --light-green: #252323;
+  --bg-color: #252323;;
+  --light-grey: #178778;
+  --text-color: #FFF;
+}
+
+/* Sidebar Container */
+.sidebar {
+  background-color: var(--bg-sidebar);
+  position: fixed;
+  top: 0; /* Align at the top of the screen */
+  width: 250px; /* Default width when open */
+  transition: width 0.3s ease; /* Smooth transition for width changes */
+  white-space: nowrap;
+  z-index: 1000; /* Ensure the sidebar is on top of other content */
+  left: 0; /* Align with the left of the screen */
+}
+
+.sidebar.close {
+  width: 80px; /* Width when closed */
+}
+
+/* Upper Navbar */
+.upper-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #050412;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  position: fixed;
+  top: 0; /* Align at the top of the screen */
+  left: 0; /* Align with the left of the screen */
+  width: 100%; /* Full width of the viewport */
+  border-radius: 20px;
+  border-end-end-radius: 20px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 500; /* Ensure the navbar is below the sidebar */
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex; /* Adjust based on the height of the upper navbar */
+  overflow: hidden;
+  margin-left: -115px; /* Default margin when sidebar is open */
+  margin-right: -190px;
+  padding-right: -5%;
+  transition: margin-left 0.3s ease; /* Smooth transition for margin changes */
+  margin-top: -8%;
+  background-color: #252323;
+}
+
+.main-layout.expanded {
+  margin-left: 80px; /* Margin when sidebar is closed */
+}
+
+.main-layout.collapsed {
+  margin-left: 250px; /* Margin when sidebar is open */
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  margin-left: -5px; /* 20px margin from the left edge of the screen */
+  margin-top: 70px; /* Align below the upper navbar */
+  position: relative; /* Ensure positioning context */
+  width: calc(100%); /* Full width minus 20px margin */
+  background-color: #252323;
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Horizontal layout */
+  width: 100%; /* Full width of the parent container */
+  height: 100%; /* Full height of the parent container */
+  margin-left: 20px; /* Shift the content part1 to the right */
+  margin-right: -20px;
+  background-color: #252323;
+}
+
+.student-main-content-part1 {
+  flex: 4; /* 80% width */
+  padding: 20px;
+  overflow-y: auto; /* Adds scroll if content overflows */
+  background-color: #202027;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  margin-left: -2%;
+  margin-bottom: 10%;
+  margin-top: 40px;
+  margin-right: 0%;
+  background-color: #252323;
+}
+
+.student-main-content-part2 {
+  flex: 1; /* 20% width */
+  padding: 20px;
+  overflow-y: auto; /* Adds scroll if content overflows */
+  background-color: #252323;
+  box-sizing: border-box; /* Ensure padding is included in width */
+  margin-right: -100px;
+}
+

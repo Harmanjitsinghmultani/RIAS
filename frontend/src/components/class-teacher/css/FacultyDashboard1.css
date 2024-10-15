@@ -1,0 +1,320 @@
+/* General Styles */
+* {
+    margin-top: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  :root {
+    --bg-sidebar: #010f17;
+    --light-green: #252323;
+    --bg-color: #f4f4f4;
+    --light-grey: #37887d;
+    --text-color: #FFF;
+  }
+  
+  /* Main Container */
+  .student-main-content-part1 {
+    padding: 20px;
+    background-color: #333333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+  
+  /* Cards Container */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(70% - 20px); /* Adjust width to accommodate timetable */
+  }
+  
+  /* Card */
+  .card, .card2 {
+    background-color: #333333; /* Dark Slate Gray */
+    padding: 15px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(108, 100, 100);
+    text-align: center;
+    min-height: 150px;
+    flex: 1 1 calc(22% - 10px);
+    max-width: calc(22% - 10px);
+    box-sizing: border-box;
+    color: #ffffff;
+  }
+  
+  .card2 {
+    margin-bottom: 50%;
+    width: 100%;
+  }
+  
+  .large-card {
+    flex: 1 1 calc(48% - 10px);
+    max-width: calc(48% - 10px);
+    min-height: 350px;
+  }
+  
+  /* Card Titles and Content */
+  .card h2, .card2 h2, .large-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p, .card2 p {
+    color: #ccc;
+    font-size: 14px;
+  }
+  
+  /* Ensure the container is a flex container and the button is at the bottom */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure container takes full height if needed */
+    justify-content: flex-end; /* Align items to the bottom */
+  }
+  
+  /* Buttons */
+  .action-button, .view-all-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d11b1b; /* Default button color */
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button-container .action-button {
+    margin-top: auto; /* Pushes button to the bottom of the container */
+  }
+  
+  .action-button:hover, .view-all-button:hover {
+    background-color: #004494; /* Darker blue for hover effect */
+  }
+  
+  /* Timetable Container */
+  .timetable-container {
+    width: 30%;
+    margin-left: 20px;
+  }
+  
+  /* Timetable */
+  .timetable {
+    background-color: #333333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+  }
+  
+  .timetable h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .timetable table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .timetable th, .timetable td {
+    border: 1px solid #151010;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .timetable th {
+    background-color: #333333;
+  }
+  
+  /* Chart Containers */
+  .chart-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .small-bar-chart {
+    height: 200px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Bar Chart Container */
+  .bar-chart-container, .pie-chart-container {
+    flex: 1 1 calc(48% - 10px);
+    max-width: calc(48% - 10px);
+    min-height: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 5px;
+    box-sizing: border-box;
+  }
+  
+  .bar-chart, .pie-chart {
+    width: 100%;
+    height: 400px;
+  }
+  
+  /* Reward Points Dashboard */
+  .reward-points-dashboard {
+    flex: 1 1 calc(90% - 10px);
+    max-width: calc(90% - 10px);
+    min-height: 200px;
+    background-color: #333333; /* Dark Gray */
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 5px;
+    box-sizing: border-box;
+    margin-top: -20%;
+    margin-bottom: 50%;
+  }
+  
+  .reward-points-dashboard h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .points-summary, .points-history {
+    margin-bottom: 10px;
+  }
+  
+  .points-summary p, .points-history p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 1000px) {
+    .reward-points-dashboard {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .points-summary, .points-history {
+    margin-bottom: 5px;
+  }
+  
+  .points-summary p, .points-history p {
+    margin: 5px 0;
+  }
+  
+  /* Monthly Survey Participation */
+  .survey-status p {
+    margin: 10px 0;
+  }
+  
+  .survey-links a {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .survey-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Vertical Progress Bar */
+  .progress-bar-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+    width: 50px;
+    background-color: #ddd;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  
+  .progress-bar-vertical span {
+    height: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#37887d; /* Button color */
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: normal;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.3s ease;
+    margin-bottom: 10%;
+  }
+  
+  /* Feedback Summary Card */
+  .card8 {
+    background-color: #333333; /* Dark Gray for card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    height: 200px; /* Adjust height to fit smaller chart */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center align content */
+    width: 90%;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in width/height calculations */
+    overflow: hidden; /* Hide overflow to prevent content from spilling out */
+    color: #FFF;
+  }
+  
+  .card8 h2 {
+    margin-bottom: 30px; /* Space between title and chart */
+    font-size: 18px; /* Adjust font size as needed */
+    color: #FFF;
+  }
+  
+  .card8 canvas {
+    width: 100% !important; /* Make sure the chart fills the card width */
+    height: auto !important; /* Maintain aspect ratio */
+    max-height: 200px; /* Limit height to ensure it fits within the card */
+    margin-top: -40px; 
+    margin-left: -3%; /* Space between the title and chart */
+    
+  }
+  
+  /* Monthly Survey Participation Card */
+  .card3 {
+    background-color: #333333; /* Dark Gray for card background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgb(252, 252, 252);
+    margin: 8px  0;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: #ffff;
+  }
+  
+  .card3 h2 {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 18px;
+  }
+  
+  .card3 canvas {
+    width: 100% !important;
+    height: 92% !important;
+  }
+  

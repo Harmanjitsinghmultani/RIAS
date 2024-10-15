@@ -1,0 +1,375 @@
+/* Center the feedback container */
+.feedbackContainer {
+  display: flex;
+  justify-content: flex-start;
+  /* Align content to the start (left) */
+  align-items: center;
+
+  /* Full viewport height */
+  padding: 2px;
+  flex-wrap: wrap;
+  /* Allows wrapping of cards if there's not enough space */
+  width: 1200px;
+  /* Optional: Set a max width for better control */
+  margin: 0 auto;
+  /* Center container horizontally */
+  margin-left: 0px;
+  margin-top: 20px;
+
+  align-items: left;
+}
+
+/* Style for each feedback card */
+.feedbackCard {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 90%;
+  /* Set a maximum height and enable scrolling */
+  flex: 1;
+  box-sizing: border-box;
+  margin-top: 90px;
+  margin-left: 60px;
+  height: 100%;
+  min-height: 630px;
+  max-height: 1400px;
+
+}
+.questioncard {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(147, 21, 21, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 90%;
+  /* Set a maximum height and enable scrolling */
+  flex: 1;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-left: 60px;
+  height: 100%;
+  min-height: 630px;
+  max-height: 1400px;
+
+}
+
+/* Add specific styles for the faculty feedback page */
+.facultyFeedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for dropdown containers */
+.dropdownContainer {
+  display: flex;
+  flex-direction: row;
+  /* Arrange items horizontally */
+  flex-wrap: wrap;
+  /* Allow items to wrap if necessary */
+  gap: 15px;
+  /* Space between each dropdown item */
+  max-width: 100%;
+  /* Ensure container fits within its parent */
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Style for dropdown items */
+.dropdownItem {
+  flex: 1;
+  /* Ensure each dropdown item takes equal space */
+  min-width: 150px;
+  /* Minimum width for dropdown items */
+}
+
+/* Style for dropdown selects */
+.dropdownItem select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Ensure padding does not affect width */
+  height: 40px;
+  /* Set a fixed height for dropdowns */
+}
+
+/* Container for buttons */
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the buttons */
+}
+
+/* Style for filter button */
+.filterButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Style for PDF download button */
+.pdfButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #0be3d1;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdfButton:hover {
+  background-color: #00ff22;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pdfButton:active {
+  background-color: #004094;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.pdfButton:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+
+/* Style for disabled filter button */
+.filterButton:disabled {
+  background-color: #d0d0d0;
+  /* Light gray background */
+  color: #aaa;
+  /* Light gray text */
+  cursor: not-allowed;
+  /* Change cursor to indicate disabled state */
+  opacity: 0.6;
+  /* Reduced opacity */
+}
+
+/* Style for feedback table */
+.feedbackTable {
+
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+
+}
+
+/* Ensure column widths */
+.feedbackTable th,
+.feedbackTable td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
+  box-sizing: border-box;
+  
+  /* Include padding and border in element's total width and height */
+}
+
+.feedbackTable th {
+  background-color: #f4f4f4;
+  max-width: 200px;
+  min-width: 80px;
+  font-size: 12px;
+}
+
+.feedbackTable .questionColumn {
+  width: 80%;
+  /* 80% width for Question column */
+}
+
+.feedbackTable .scoreColumn {
+  max-width: 100px;
+  min-width: 80px;
+  /* 20% width for Average Score column */
+}
+
+/* Style for feedback table wrapper */
+.feedbackTableWrapper {
+  max-height: 450px;
+  max-width: 100%;
+  /* Adjust as needed */
+  overflow-y: auto;
+  /* Add vertical scroll bar */
+  overflow-x: hidden;
+  /* Hide horizontal scroll bar if not needed */
+  margin-top: 20px;
+  align-items: flex-start;
+
+  display: block;
+}
+
+/* Style for delete button */
+.deleteButton {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for feedback messages */
+.feedbackMessage {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.feedbackMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.feedbackMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.chartContainer {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.chartWrapper {
+  flex: 1 1 calc(50% - 15px);
+  /* Adjust width for 2x2 layout */
+  width: 150%;
+  max-width: 660px;
+  height: 200px;
+  /* Adjust height */
+  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(194, 194, 194));
+  /* Gradient background for a colorful effect */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center-align contents horizontally */
+  justify-content: center;
+  /* Center-align contents vertically */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Smooth transition for hover effects */
+}
+
+.chartWrapper:hover {
+  background-color: #f1f1f1;
+  /* Slightly darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow on hover */
+}
+
+.chartTitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+  /* White text color for contrast */
+}
+
+.xAxisNote {
+  margin-top: 10px;
+  font-style: italic;
+  color: #fff;
+  /* White text color for contrast */
+}
+
+.statsContainer {
+  margin-top: 2px;
+  display: flex;
+  gap: 15px;
+}
+
+.statItem {
+  background: #ab1818;
+  /* Strong red background */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  flex: 1;
+  color: #fff;
+  /* White text color for contrast */
+}
+
+.statItem:nth-child(even) {
+  background: #18ab18;
+  /* Green background for even items */
+}
+
+.statItem:nth-child(odd) {
+  background: #1818ab;
+  /* Blue background for odd items */
+}
+
+
+
+
+
+/* Style for scrollable container */
+.scrollableContainer {
+  max-height: 600px;
+  /* Set a max height */
+  overflow-y: auto;
+  /* Add vertical scrollbar */
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar if not needed */
+  padding: 20px;
+  /* Add some padding */
+  box-sizing: border-box;
+  /* Include padding in height calculation */
+}
+
+
+
+.searchContainer {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.searchInput::placeholder {
+  color: #888;
+}

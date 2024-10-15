@@ -1,0 +1,126 @@
+.feedback-card {
+    position: relative;
+    width: 100%;
+    /* Adjust width as needed */
+    max-width: 1400px;
+    /* Ensure the card does not exceed this width */
+    height: 600px;
+    /* Set a fixed height for the card */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    margin-left: 80px;
+    overflow-y: auto;
+    /* Add vertical scrollbar when content exceeds height */
+  }
+  
+  
+  
+  .feedback-content {
+    max-height: calc(100% - 100px);
+    /* Adjust height based on card padding and other elements */
+  }
+  
+  .feedback-form-container {
+    margin-top: 20px;
+    max-height: calc(100% - 200px);
+    /* Adjust height based on card padding and other elements */
+  }
+  
+  
+  .submit-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .timetable-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  .timetable-table th,
+  .timetable-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .timetable-table th {
+    background-color: #f2f2f2;
+  }
+  
+  
+  .error-message {
+    color: red;
+    margin-top: 20px;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 20px;
+  }
+  
+  .profile-info {
+    display: flex;
+    justify-content: space-between;
+    /* Space out the items */
+    flex-wrap: wrap;
+    /* Allow items to wrap if necessary */
+    gap: 20px;
+    /* Adjust spacing between items */
+    padding: 10px 0;
+    /* Add padding for spacing around the profile info */
+  }
+  
+  .profile-info p {
+    margin: 0;
+    /* Remove default margin */
+    flex: 1;
+    /* Allow flex items to grow and shrink as needed */
+    text-align: left;
+    /* Align text to the left */
+  }
+  
+  .feedback-form-container {
+    margin-top: 20px;
+  }
+  
+  .feedback-form {
+    width: 100%;
+  }
+  
+  .feedback-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .feedback-table th,
+  .feedback-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .feedback-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .feedback-table select {
+    width: 100%;
+  }

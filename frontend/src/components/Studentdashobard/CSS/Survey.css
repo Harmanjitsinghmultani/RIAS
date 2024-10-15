@@ -1,0 +1,33 @@
+/* General styling for the StudentSurvey component */
+.student-survey-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.student-survey-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.student-survey-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.student-survey-container .feedback-item {
+    padding: 15px;
+    border: 1px solid #ffc7c7;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.student-survey-container .feedback-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.student-survey-container .feedback-item p strong {
+    color: #4CAF50;
+}

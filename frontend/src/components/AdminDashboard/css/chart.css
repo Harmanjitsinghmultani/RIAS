@@ -1,0 +1,253 @@
+/* Style for chart container */
+.chartContainer {
+  margin-top: 70px;
+  margin-left: 70px;
+  width: 100%; /* Ensures the container takes full width */
+  min-width: 1550px; /* Minimum width to prevent it from shrinking too much */
+  max-width: 1800px; /* Optional: Set a maximum width if desired */
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+/* Style for chart feedback card */
+.chartFeedbackCard {
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 90%;
+  margin-left: 4px;
+  color: #ccc;
+}
+
+/* Style for chart message */
+.chartMessage {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.chartMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.chartMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Style for dropdown container */
+.chartDropdownContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Style for dropdown items */
+.chartDropdownItem {
+  flex: 1;
+  min-width: 150px;
+}
+
+.chartDropdownItem select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+/* Style for apply button */
+.chartApplyButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Style for chart container */
+.chartChartContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Style for chart wrappers */
+.chartChartWrapper {
+  flex: 1 1 calc(50% - 15px);
+  width: 150%;
+  max-width: 660px;
+  height: 200px;
+  background-color: #505050;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chartChartWrapper:hover {
+  background-color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chartChartTitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+/* Style for analysis container */
+.chartAnalysisContainer {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 660px;
+  height: 200px;
+  overflow: auto;
+}
+
+/* Style for x-axis note */
+.chartChartNote {
+  margin-top: 10px;
+  font-style: italic;
+  color: #000; /* Changed to black for better visibility */
+}
+
+/* Additional styles for feedback cards, faculty feedback, and feedback tables */
+.feedbackContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2px;
+  flex-wrap: wrap;
+  width: 1400px;
+  margin: 0 auto;
+  margin-left: 120px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.feedbackCard {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.facultyFeedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropdownContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.dropdownItem {
+  flex: 1;
+  min-width: 150px;
+}
+
+.dropdownItem select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.filterButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.feedbackTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.feedbackTable th,
+.feedbackTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.feedbackTable th {
+  background-color: #f4f4f4;
+}
+
+.deleteButton {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feedbackMessage {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.feedbackMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.feedbackMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.feedbackTableWrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+}

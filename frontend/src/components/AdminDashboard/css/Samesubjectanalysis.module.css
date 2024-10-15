@@ -1,0 +1,132 @@
+.samesubjectanalysisContainer {
+    margin-top: 100px;
+
+    width: 100%; /* Ensures the container takes full width */
+    min-width: 1000px; /* Minimum width to prevent it from shrinking too much */
+    max-width: 1200px; /* Optional: Set a maximum width if desired */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    
+}
+
+.samesubjectanalysisCard {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid #e0e0e0;
+    height: 100%;
+    width: 100%; /* Ensures the container takes full width */
+    min-width: 1000px; /* Minimum width to prevent it from shrinking too much */
+    max-width: 1200px; /* Optional: Set a maximum width if desired */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    margin-left: 8%;
+
+}
+
+.samesubjectanalysisTitle {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.samesubjectanalysisDescription {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #666;
+}
+
+.samesubjectanalysisMessage {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.samesubjectanalysisMessage.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.samesubjectanalysisMessage.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+.samesubjectanalysisInputContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 30px;
+}
+
+.samesubjectanalysisDropdown {
+    flex-grow: 1;
+    
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+    
+}
+
+.samesubjectanalysisDropdown:focus {
+    border-color: #171717;
+    outline: none;
+}
+
+.samesubjectanalysisButton {
+    padding: 12px 25px;
+    margin-left: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.samesubjectanalysisButton:hover {
+    background-color: #0056b3;
+}
+
+.samesubjectanalysisTableWrapper {
+    margin-top: 25px;
+    overflow-x: auto;
+    
+}
+
+.samesubjectanalysisTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.samesubjectanalysisTable th,
+.samesubjectanalysisTable td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+}
+
+.samesubjectanalysisTable th {
+    background-color: #f7f7f7;
+    font-weight: bold;
+}
+
+.samesubjectanalysisTable tbody tr:nth-child(even) {
+    background-color: #fbfbfb;
+}
+
+.samesubjectanalysisTable tbody tr:hover {
+    background-color: #f1f1f1;
+}

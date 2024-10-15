@@ -1,0 +1,169 @@
+.container {
+    padding: 100px; /* Adjust padding for a more compact layout */
+    font-family: Arial, sans-serif;
+    margin-top: 0; /* Adjust margin */
+    margin-top: -30px;
+    max-height: 500px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.filters {
+    margin-bottom: 15px;
+}
+
+.dropdown {
+    margin-right: 10px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.tableWrapper {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin-top: 10px; /* Add margin for better spacing */
+    max-height: 500px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff; /* Ensure table background is white */
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: normal;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fff; /* Ensure row background is white */
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table button {
+    margin: 2px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    align-items: center;
+}
+
+.table button:hover {
+    background-color: #ddd;
+}
+
+.table button.delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.table button.update {
+    background-color: #3498db;
+    color: #fff;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.editForm {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: 12fr 1fr; /* Adjusted for better alignment */
+    grid-template-rows: repeat(2, auto) auto; /* Two rows for inputs and one for buttons */
+ 
+    column-gap: 10px; /* Horizontal gap between columns */
+    row-gap: 10px; /* Vertical gap between rows */
+}
+  
+.editForm h2 {
+    grid-column: span 2; /* Make the heading span across both columns */
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+  
+.editForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    /* Removed gap as it's not applicable here */
+}
+  
+.editForm button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+.editForm .update {
+    background-color: #4CAF50;
+    color: #fff;
+    grid-column: span 2; /* Make the update button span across both columns */
+}
+  
+.editForm .update:hover {
+    background-color: #45a049;
+}
+  
+.editForm .cancel {
+    background-color: #f44336;
+    color: #fff;
+    margin-left: 10px;
+    grid-column: span 2; /* Make the cancel button span across both columns */
+}
+  
+.editForm .cancel:hover {
+    background-color: #e53935;
+}

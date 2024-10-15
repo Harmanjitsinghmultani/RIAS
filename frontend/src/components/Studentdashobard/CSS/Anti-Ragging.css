@@ -1,0 +1,134 @@
+/* AntiRaggingForm.css */
+
+.anti-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 300px;
+  }
+  
+  .anti-card {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff; /* White container */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px auto;
+  }
+  
+  .anti-heading {
+    color: #2c3e50;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .anti-disclaimer {
+    color: #002aff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .anti-form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .anti-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .anti-textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+    background-color: #f9f9f9;
+  }
+  
+  .anti-button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .anti-submit-button {
+    width: 48%;
+    padding: 12px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .anti-submit-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .anti-cancel-button {
+    width: 48%;
+    padding: 12px;
+    background-color: #95a5a6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .anti-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .anti-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .anti-modal-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .anti-modal-button.cancel {
+    background-color: #e74c3c;
+  }
+  

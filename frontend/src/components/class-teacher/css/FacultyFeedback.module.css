@@ -1,0 +1,148 @@
+/* Center the feedback container */
+.feedbackContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Full viewport height */
+    padding: 2px;
+    flex-wrap: wrap;
+    /* Allows wrapping of cards if there's not enough space */
+    width: 1400px;
+    /* Optional: Set a max width for better control */
+    margin: 0 auto;
+    /* Center container horizontally */
+    margin-left: 120px;
+    margin-top: 20px;
+    /* Updated margin-top for better spacing */
+    margin-bottom: 0;
+}
+
+/* Style for each feedback card */
+.feedbackCard {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    max-width: 100%;
+    /* Responsive design: Ensure cards don't overflow */
+    flex: 1;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+/* Add specific styles for the faculty feedback page */
+.facultyFeedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for dropdown containers */
+.dropdownContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    /* Limit the width for better layout */
+    margin-bottom: 20px;
+}
+
+/* Style for dropdown items */
+/* Ensure dropdown items are arranged vertically */
+/* Style for dropdown container */
+.dropdownContainer {
+    display: flex;
+    flex-direction: row;
+    /* Arrange items horizontally */
+    flex-wrap: wrap;
+    /* Allow items to wrap if necessary */
+    gap: 15px;
+    /* Space between each dropdown item */
+    max-width: 100%;
+    /* Ensure container fits within its parent */
+    margin-bottom: 20px;
+}
+
+/* Style for dropdown items */
+.dropdownItem {
+    flex: 1;
+    /* Ensure each dropdown item takes equal space */
+    min-width: 150px;
+    /* Minimum width for dropdown items */
+}
+
+/* Style for dropdown selects */
+.dropdownItem select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* Ensure padding does not affect width */
+    height: 40px;
+    /* Set a fixed height for dropdowns */
+}
+
+/* Style for filter button */
+.filterButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Space above the button */
+}
+
+
+
+/* Style for feedback table */
+.feedbackTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.feedbackTable th,
+.feedbackTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.feedbackTable th {
+    background-color: #f4f4f4;
+}
+
+/* Style for delete button */
+.deleteButton {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedbackMessage {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.feedbackMessage.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.feedbackMessage.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
