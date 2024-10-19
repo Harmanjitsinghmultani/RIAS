@@ -301,7 +301,7 @@ Contributions are what make the open-source community such an amazing place to l
 **Aditya Bhagat**  
 - LinkedIn: [Aditya Bhagat](https://www.linkedin.com/in/aditya-bhagat03/)  
 - Portfolio: [Aditya Bhagat](https://aditya-bhagat.netlify.app/)  
-- Email: [adityabhagat525@gmail.com](adityabhagat525@gmail.com)
+- Email: [harmanjeet.multani88@gmail.com](harmanjeet.multani88@gmail.com)
 
 ---
 
